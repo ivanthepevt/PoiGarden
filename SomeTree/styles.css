@@ -1,0 +1,36 @@
+body{
+    background: url(background/garden.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+@keyframes teeter {
+  0% { transform: rotate(-10deg); }
+  50% { transform: rotate(10deg); }
+  100% { transform: rotate(-10deg); }
+}
+
+.flower {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  animation: teeter 2s ease-in-out infinite;
+}
+
+.fruit {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  padding-top: 75px;
+  animation: teeter 2.8s ease-in-out infinite;
+}
+
+#flower1 {
+  left: calc(20vw - 50px); 
+  top: calc(40vh - 50px); 
+}
+
+#fruit1 {
+  left: calc(60vw - 50px); 
+  top: calc(55vh - 50px); 
+}
